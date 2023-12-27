@@ -3,13 +3,17 @@ class CategoriesController < ApplicationController
     @categories = Category.all
   end
 
-  def show
+
+  def show_category
     @category = Category.find(params[:id])
     @products = @category.products
-    # respond_to do |format|
-    #   format.js
-    # end
   end
+  
+
+#   def show
+# @category = Category.find(params[:id])
+#   @products = @category.products
+#   end
   
   
 end

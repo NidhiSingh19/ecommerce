@@ -26,23 +26,6 @@
   <%# <%= select_tag :category, options_for_select(@categories.map { |category| [category.name, category.id] }, prompt: 'Select a category'), class: 'form-control' %> 
   <%# <%= link_to 'Filter', categories_show_path, class: 'btn btn-primary' %> 
 <%# </div> %>
-<div class="form-group">
-  <%= label_tag "category", "Select a category:" %>
-  <%= select_tag :category, options_for_select(@categories.map { |category| [category.name, category.id] }, prompt: 'Select a category'), class: 'form-control', id: 'category-select' %>
-  <%= link_to 'Filter', '#', id: 'filter-link', class: 'btn btn-primary' %>
-</div>
-
-<script>
-  document.getElementById('filter-link').addEventListener('click', function() {
-    var categoryId = document.getElementById('category-select').value;
-    if (categoryId) {
-      window.location.href = '/categories/' + categoryId + '/show_category';
-    }
-  });
-</script>
-
-
-
           </li>
         </ul>
       </div>

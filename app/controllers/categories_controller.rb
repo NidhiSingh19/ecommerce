@@ -4,16 +4,16 @@ class CategoriesController < ApplicationController
   end
 
 
-  def show_category
-    @category = Category.find(params[:id])
-    @products = @category.products
-  end
+  # def show_category
+  #   @category = Category.find(params[:id])
+  #   @products = @category.products
+  # end
   
 
-#   def show
-# @category = Category.find(params[:id])
-#   @products = @category.products
-#   end
+  def show
+@category = Category.find(params[:id])
+  @products = @category.products
+  end
   
   
 end

@@ -1,18 +1,19 @@
 <!-- app/views/categories/index.html.erb -->
 
-<%# <h1>Categories</h1>
+<h1>Categories</h1>
 <ul>
   <% @categories.each do |category| %>
-    <%# <li><%= link_to category.name, category_path(category), remote: true</li> %>
-  <%# <% end %>
-<%# </ul> %>
+    <li><%= link_to category.name, category_path(category), remote: true%></li>
+  <% end %>
+</ul>
 
-<%# <h1>Categories</h1>
-<%= form_tag categories_show_path , method: :get do %>
-  <%# <%= select_tag :category, options_for_select(@categories.map { |category| [category.name, category.id] }), prompt: 'Select a category' %>
+ <%# <h1>Categories</h1>
+# <%= form_tag categories_show_path , method: :get do %>
+<%# <%= select_tag :category, options_for_select(@categories.map { |category| [category.name, category.id] }), prompt: 'Select a category' %>
   <%# <%= submit_tag 'Filter', class: 'btn btn-primary' %>
 <%# <% end %>
-<h1>Categories</h1>
+<%# <h1>Categories</h1> %>
+
 
 
 <%# <script>
